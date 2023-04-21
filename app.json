@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Gallery-App",
-    "slug": "Gallery-App",
+    "slug": "gallery-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,17 +16,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.loock.galleryapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.loock.galleryapp"
     },
     "web": {
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8141506b-95d7-4eef-ae53-16c5aba0372e"
+      }
+    },
+    "owner": "loock"
   }
 }
